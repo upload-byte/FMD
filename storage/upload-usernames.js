@@ -1,8 +1,8 @@
 const { Octokit } = require('@octokit/rest');
 
 const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
-const owner = 'YOUR_GITHUB_USERNAME';
-const repo = 'YOUR_REPO_NAME';
+const owner = 'upload-byte';
+const repo = 'FMD';
 const path = 'usernames.json';
 
 async function addUsernameToGithub(newUsername) {
